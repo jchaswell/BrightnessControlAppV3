@@ -28,72 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelMon1 = new System.Windows.Forms.Label();
-            this.labelMon2 = new System.Windows.Forms.Label();
-            this.trackBarMon2 = new System.Windows.Forms.TrackBar();
-            this.trackBarMon1 = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarMon2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarMon1)).BeginInit();
+            this.labelScheduledBrightness = new System.Windows.Forms.Label();
+            this.trackBarScheduledBrightness = new System.Windows.Forms.TrackBar();
+            this.dateTimePickerScheduledEvent = new System.Windows.Forms.DateTimePicker();
+            this.labelScheduledBrightnessValue = new System.Windows.Forms.Label();
+            this.buttonApplySchedule = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarScheduledBrightness)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelMon1
+            // labelScheduledBrightness
             // 
-            this.labelMon1.AutoSize = true;
-            this.labelMon1.Location = new System.Drawing.Point(276, 126);
-            this.labelMon1.Name = "labelMon1";
-            this.labelMon1.Size = new System.Drawing.Size(35, 13);
-            this.labelMon1.TabIndex = 2;
-            this.labelMon1.Text = "label1";
+            this.labelScheduledBrightness.AutoSize = true;
+            this.labelScheduledBrightness.Location = new System.Drawing.Point(170, 66);
+            this.labelScheduledBrightness.Name = "labelScheduledBrightness";
+            this.labelScheduledBrightness.Size = new System.Drawing.Size(35, 13);
+            this.labelScheduledBrightness.TabIndex = 2;
+            this.labelScheduledBrightness.Text = "label1";
             // 
-            // labelMon2
+            // trackBarScheduledBrightness
             // 
-            this.labelMon2.AutoSize = true;
-            this.labelMon2.Location = new System.Drawing.Point(279, 218);
-            this.labelMon2.Name = "labelMon2";
-            this.labelMon2.Size = new System.Drawing.Size(35, 13);
-            this.labelMon2.TabIndex = 3;
-            this.labelMon2.Text = "label2";
+            this.trackBarScheduledBrightness.Location = new System.Drawing.Point(323, 33);
+            this.trackBarScheduledBrightness.Maximum = 100;
+            this.trackBarScheduledBrightness.Name = "trackBarScheduledBrightness";
+            this.trackBarScheduledBrightness.Size = new System.Drawing.Size(104, 45);
+            this.trackBarScheduledBrightness.TabIndex = 3;
+            this.trackBarScheduledBrightness.Value = 100;
             // 
-            // trackBarMon2
+            // dateTimePickerScheduledEvent
             // 
-            this.trackBarMon2.Location = new System.Drawing.Point(410, 218);
-            this.trackBarMon2.Maximum = 100;
-            this.trackBarMon2.Name = "trackBarMon2";
-            this.trackBarMon2.Size = new System.Drawing.Size(104, 45);
-            this.trackBarMon2.TabIndex = 1;
+            this.dateTimePickerScheduledEvent.Location = new System.Drawing.Point(492, 60);
+            this.dateTimePickerScheduledEvent.Name = "dateTimePickerScheduledEvent";
+            this.dateTimePickerScheduledEvent.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerScheduledEvent.TabIndex = 4;
             // 
-            // trackBarMon1
+            // labelScheduledBrightnessValue
             // 
-            this.trackBarMon1.Location = new System.Drawing.Point(410, 126);
-            this.trackBarMon1.Maximum = 100;
-            this.trackBarMon1.Name = "trackBarMon1";
-            this.trackBarMon1.Size = new System.Drawing.Size(104, 45);
-            this.trackBarMon1.TabIndex = 0;
+            this.labelScheduledBrightnessValue.AutoSize = true;
+            this.labelScheduledBrightnessValue.Location = new System.Drawing.Point(323, 85);
+            this.labelScheduledBrightnessValue.Name = "labelScheduledBrightnessValue";
+            this.labelScheduledBrightnessValue.Size = new System.Drawing.Size(35, 13);
+            this.labelScheduledBrightnessValue.TabIndex = 5;
+            this.labelScheduledBrightnessValue.Text = "label1";
+            // 
+            // buttonApplySchedule
+            // 
+            this.buttonApplySchedule.Location = new System.Drawing.Point(27, 66);
+            this.buttonApplySchedule.Name = "buttonApplySchedule";
+            this.buttonApplySchedule.Size = new System.Drawing.Size(75, 23);
+            this.buttonApplySchedule.TabIndex = 6;
+            this.buttonApplySchedule.Text = "button1";
+            this.buttonApplySchedule.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelMon2);
-            this.Controls.Add(this.labelMon1);
-            this.Controls.Add(this.trackBarMon2);
-            this.Controls.Add(this.trackBarMon1);
+            this.Controls.Add(this.buttonApplySchedule);
+            this.Controls.Add(this.labelScheduledBrightnessValue);
+            this.Controls.Add(this.dateTimePickerScheduledEvent);
+            this.Controls.Add(this.trackBarScheduledBrightness);
+            this.Controls.Add(this.labelScheduledBrightness);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarMon2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBarMon1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarScheduledBrightness)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelMon1;
-        private System.Windows.Forms.Label labelMon2;
-        private System.Windows.Forms.TrackBar trackBarMon2;
-        private System.Windows.Forms.TrackBar trackBarMon1;
+        private System.Windows.Forms.Label labelScheduledBrightness;
+        private System.Windows.Forms.TrackBar trackBarScheduledBrightness;
+        private System.Windows.Forms.DateTimePicker dateTimePickerScheduledEvent;
+        private System.Windows.Forms.Label labelScheduledBrightnessValue;
+        private System.Windows.Forms.Button buttonApplySchedule;
     }
 }

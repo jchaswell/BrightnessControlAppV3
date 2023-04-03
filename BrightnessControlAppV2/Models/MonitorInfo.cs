@@ -8,6 +8,6 @@ namespace BrightnessControlAppV2.Models
 {
     public class MonitorInfo
     {
-        // Placeholder for monitor information properties
+        public List<BrightnessEvent> Schedule { get; set; } = new List<BrightnessEvent>();
     }
 }
